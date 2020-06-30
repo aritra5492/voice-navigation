@@ -1,0 +1,5 @@
+<button aria-label="start recording" class="record" [class.recording]="isRecording" [disabled]="isFetchingText"
+  (click)="toggleRecording()">
+  <i *ngIf="!isFetchingText" class="fa fa-microphone" aria-hidden="true"></i>
+  <i *ngIf="isFetchingText" class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+</button>
